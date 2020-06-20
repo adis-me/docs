@@ -44,7 +44,7 @@ Based on this separation of concerns we implemented The Things Network's backend
 
 #### Gateway Protocol Translation (Router/Bridge)
 
-When a gateway receives a message that was transmitted over LoRa, it is encapsulated and forwarded to The Things Network over the Internet (see figure below). Many gateways use the same reference gateway protocol, but alternative protocols have been developed for specific backends. The Things Network is also developing its own gateway protocol that is more suitable for The Things Network than the reference protocol in terms of security and access control.
+When a gateway receives a message that was transmitted over LoRa, it is encapsulated and forwarded to The Things Network over the Internet (see figure above). Many gateways use the same reference gateway protocol, but alternative protocols have been developed for specific backends. The Things Network is also developing its own gateway protocol that is more suitable for The Things Network than the reference protocol in terms of security and access control.
 
 Most gateway protocols have the same structure. When one or more messages are received, their binary payload is forwarded to the backend, together with metadata such as signal strength (RSSI) and signal-to-noise ratio (SNR). Periodically the gateway also sends some status information about the gateway itself, such as GPS coordinates, the number of packets received and transmitted and other metrics.
 
